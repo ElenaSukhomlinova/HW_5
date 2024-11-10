@@ -15,9 +15,9 @@ public class Main {
         int clientDeviceYear = 2014;
 
         if (clientOs == 0 && clientDeviceYear < 2015) {
-            System.out.println("Установите облегченную версию приложения для IOS по ссылке");
+            System.out.println("Установите облегченную версию приложения для iOS по ссылке");
         } else if (clientOs == 0 && clientDeviceYear >= 2015) {
-            System.out.println("Установите версию приложения для IOS по ссылке");
+            System.out.println("Установите версию приложения для iOS по ссылке");
         } else if (clientOs != 0 && clientDeviceYear < 2015) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
         } else {
@@ -27,12 +27,12 @@ public class Main {
         System.out.println("Задача 3");
         int year = 2020;
 
-        if (year > 1584 && year %4 == 0) {
+        if (year > 1584 && year %400 == 0) {
             System.out.println(year + " является високосным");
-        } else if (year > 1584 && year %400 == 0) {
-            System.out.println(year + " является високосным");
-        }else if (year > 1584 && year %100 == 0) {
+        } else if (year > 1584 && year %100 == 0) {
             System.out.println(year + " не является високосным");
+        } else if (year > 1584 && year %4 == 0) {
+            System.out.println(year + " является високосным");
         }else {
             System.out.println(year + " не является високосным");
         }
